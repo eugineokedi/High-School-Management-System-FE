@@ -1,14 +1,9 @@
-import './App.css';
-import SignUp  from './components/auth/SignUp';
-import SignIn from './components/auth/SignIn';
-import SignOut from './components/auth/SignOut';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-     <SignUp/>
-     <SignIn/>
-     <SignOut/>
+      <Outlet />
     </div>
   );
 }
